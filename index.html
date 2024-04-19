@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Deezer</title>
+</head>
+<body>
+    <!-- creating navigation bar -->
+    <nav>
+        <ul>
+            <li class = "brand"><img src = "logo.png" alt = "Deezer"></li>
+            <li>Home</li>
+            <li>About</li>
+        </ul>
+    </nav>
+    <!-- to display the banner card and stuff -->
+     <div class="container">
+        <div class="songList">
+            <h1>My Playlist</h1>
+            <div class = "songItemContainer">
+            <div class="songItem">
+                <img src="covers/cover1.jpg" alt="1">
+                <span class = "songName">Got my mind set on you</span>
+                <span class="songlistplay"><span class = "timeStamp">03:52 <i id="1" class="fa-solid songItemsPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="covers/cover2.jpg" alt="1">
+                <span class = "songName">My sweet lord</span>
+                <span class="songlistplay"><span class = "timeStamp">03:52 <i id="2" class="fa-solid songItemsPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="covers/cover3.jpg" alt="1">
+                <span class = "songName">Stir it up</span>
+                <span class="songlistplay"><span class = "timeStamp">03:52 <i id="3" class="fa-solid songItemsPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="covers/cover4.jpg" alt="1">
+                <span class = "songName">Sweet child o' mine</span>
+                <span class="songlistplay"><span class = "timeStamp">03:52 <i id="4" class="fa-solid songItemsPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="covers/cover5.jpg" alt="1">
+                <span class = "songName">lemon</span>
+                <span class="songlistplay"><span class = "timeStamp">03:52 <i id="5" class="fa-solid songItemsPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="covers/cover6.jpg" alt="1">
+                <span class = "songName">Stand by me</span>
+                <span class="songlistplay"><span class = "timeStamp">03:52 <i id="6" class="fa-solid songItemsPlay fa-circle-play"></i></span></span>
+            </div>
+            <div class="songItem">
+                <img src="covers/cover7.jpg" alt="1">
+                <span class = "songName">Dreams</span>
+                <span class="songlistplay"><span class = "timeStamp">03:52 <i id="7" class="fa-solid songItemsPlay fa-circle-play"></i></span></span>
+            </div>
+        </div>
+     </div>
+        <div class="songBanner"></div>
+     </div>
+     <div class="bottom">
+        <span id="masterSongName">Got my mind set on you</span>
+        <input type = "range" name = "range" id = "myProgressBar" min = "0" value="0" max = "100">
+        <div class="icons">
+            <!-- adding icons pack here -->
+            <i class="fa-solid fa-3x fa-backward" id="back"></i> 
+            <i class="fa-solid fa-3x fa-circle-play" id="masterPlay"></i>
+            <i class="fa-solid fa-3x fa-forward" id = "next"></i>
+        </div>
+        <!-- <div class="songInfo">
+            <img src="playing.gif" id= "gif" width = "40px" alt="">
+        </div> -->
+     </div>
+    <script src="https://kit.fontawesome.com/d90abef3cb.js" crossorigin="anonymous"></script>
+    <script src = "js/main.js"></script>
+</body>
+</html>
